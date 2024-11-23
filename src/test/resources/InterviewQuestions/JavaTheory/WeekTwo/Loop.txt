@@ -1,0 +1,16 @@
+Conditionals and loops
+Conditional statement: conditional statement are use to perform when there is a condition to met
+	There are three type of conditional statements
+	If: if condition happen to be true, code of block will execute, if x>21, you are old enough.
+	Else if: else if follow if statement.
+	Else: else follow if and else if statement.
+	The conditional operators are greater than >; less than <; Equal ==; not equal! =; greater than or equal >=, less than or equal <=; and &&, or ||.
+Logical statement: when there are two conditions to meet java use logical statement such as how to determined leap year
+	Logical operators are and &&, or ||.
+ Switch statement: switch statement is use for to test a case or a variable against a common value. Each statement called case and break statement follow after every case, and the final case is called default
+The Loop: Java use loop if there is continues case to execute over and over again. There are three type of loop.
+	While loop: if the condition is true the while loop will go inside the code and execute the code, otherwise loop will not go inside the code at all.
+	Do while loop: even the statement is false, do while loop will execute the code at least once.
+	For loop: there are no difference between for and while loop. For loop will run the code until its find the condition is false.
+
+

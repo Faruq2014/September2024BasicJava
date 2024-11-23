@@ -1,0 +1,23 @@
+Java Operators
+         Primitive operator or math operator 
+	Addition  +
+	Subtraction   -
+	Multiplication *
+	Division  /
+	Module  % 
+	Grater then >
+	 Less than <
+	Equal ==
+	not equal! =
+	And &&
+	OR || 
+Increment and decrement
+	Java has an easier way to increment or decrement value by any number such as 1, 2, 3 etc.
+	Prefix: x=5, ++x or --x;  value of X add on the first line.
+	Postfix: x=5, x++ or x--, value of x add on second line.
+String:
+	Between two “  ” marks everything is string.
+	Concatenation: adding two string with plus + sign called  concatenation.
+User input: there are different method to get user input.
+	Scanner class: import java.util.scanner
+

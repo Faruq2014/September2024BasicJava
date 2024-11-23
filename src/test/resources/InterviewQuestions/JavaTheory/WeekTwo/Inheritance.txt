@@ -1,0 +1,63 @@
+INHERITANCE/is a relationship 
+Inheritance is a process of acquiring of one class properties normally methods and fields by another class. It’s like a parent and child relationship.
+Advantages: 	
+1.	Inheritance made code more manageable by hierarchical order.
+2.	It reduce the length of coding.
+3.	It helps not to recoding. 
+4.	Reusability of the code. 
+5.	Redundancy 
+Key Word: EXTENDS IS THE KEY WORD TO INHERIT A CLASS.
+Types;
+1.	Single inheritance. One class inherit only one class is called single inheritance, like class A extends class B.
+2.	Multi-level inheritance : multi-level inheritance is one class inherit another class by hierarchical order like Class A extends Class B. class B inherit class C. so indirectly class C inherit class A.  It’s like father child and grandfather relationship.
+3.	Hierarchical inheritance: different classes inherit from one class. Like class B inherit from class A. also class C inherit from class A.
+4.	One class cannot inherit more than one class at a time. Multipole inheritance is not allow. WHY? Because of ambiguity problem. BUT java support multipole inheritance for interface. Because interface has only declaration, no implementation. So there is no ambiguity problem.
+5.	Cyclic inheritance:  class A extends A OR class A extends B and class B extends A. this type of inheritance is called cyclic inheritance. It is not allow in java.
+NAME: class inherit from called base class, or super class or parents’ class.
+Class inherit to call derived class, sub class, child class.
+Object class is the root of all java classes: every class in java is a child class of object class directly or indirectly. 
+If a class does not extend any class than it is directly child class of object class. But if a class extend any class than it is indirectly child of object class. Because, java doesn’t allow multipole inheritance.
+Object class: has more than 5000 common class, which is available for us to use by inheritance method. Object class has different types.
+1.	String class
+2.	String buffer
+3.	through able
+
+FINAL WORD TO STOP INHERITANCE
+If you put final word before a class, no other class can inherit anymore. Like Final class A. now class B cannot inherit from A.
+CONSTRUCTOR: by inheritance automatically child class acquires methods and fields from parent’s class. But child class cannot inherit constructor. Sure child class can invoke or call the constructor. Constructor calling is very tricky, really have to very careful.
+SUPER: super represents parents class. 
+1.	If parents and child class has same name variable and method, then by using super word can call parents class variable or method. Like super.age, or super.m1.
+2.	If parent class has parameterized constructor and child class wants to call it .then child class can use super key word to call parent class constructor inside the child class constructor. But it has some tricky rules with this key word. Read constructor calling rules. 
+            OVERRIDING
+In inheritance, child class has the right or choice to change the method or fields, he is acquiring from parents class. The method is changing is called overriding method and the method is change from is called overridden method.
+CANNOT OVERRIDE CONSTRUCTOR. Because child class cannot inherit constructor, he only can call the constructor.
+RULES OF OVERRIDING:
+Overriding is known as run time, or late binding or dynamic polymorphism. Lets say class C extends P.so we make object P p1 = new C(); now if we have overriding m1 method. It will print class C’s overriding method by default.
+
+
+1.	The arguments list or method name or method signature has to be the same in both parent and child classes. That means over ridding and   overridden method signature must be the same. But remember in over loading method signature must be different.
+2.	The return type has to be the same or sub type as overridden method.
+3.	The access level cannot be more restricted then overridden method. It is allow to increase the scope of access modifier but not allow to decrease. If parent’s class access level is public then overriding method cannot be default or private. If parent class has private method it is not available to child class. So no question to override. But child class can define his own private method with duplicate name. Because it is not overriding.
+4.	A method declare final ca not be overriding, a class declare final cannot overriding. Basically if a method or a field cannot inherit than it cannot be overriding. If a method is declare final in parent class method, it cannot be overriding in child class method.
+5.	Instance methods can be overriding if they can inherit from parent class.
+6.	A method declare static cannot be overridden but can be re-declare.
+STATIC METHOD: A static method in parent class can change implementation in child class and it is called method hiding not overriding. For example if class C extends P. And both class has m1 method. Class P p = new P(); p.m1. m1 will print P class method. 
+Class C c= new C(); c.m1. m1 will print C class method.
+Class P t = new C(); t.m1. m1 will print C class method. (FOR INSTANCE METHOD)
+But for STATIC method it will print  P class method. Because in static method  resolution always depends on reference class. But instance method , method resulation always depends on run time object.
+VERIABLE: Overriding concept is not applicable on variable.
+
+
+
+
+    HAS A RELATIONSHIP
+1.	Composition or aggregation: without existing container object if there is no chance of existing contain object is called composition. Example, a university contain several department. Without existing of a university, department cannot exist. So strongly association between object is called composition.
+ Without existing container object if there is a chance of existing contain object is called aggregation. Example, a university contain several department. And every department has several professor. If university decide to close a department then professors can go another department and still work for the university. Without existing of a department, professorcan exist.so this is weakly association. So weakly association between object is called aggregation..
+
+2. No specific key word but most of the time we use NEW key word
+3. Reusability of code.
+
+              OVERLOADING
+When two methods has same name but different parameter list or arguments type is called method overloading.
+1.	Flexability.
+
